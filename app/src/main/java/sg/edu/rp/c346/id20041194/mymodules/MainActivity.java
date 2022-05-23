@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         btnModule1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, C346Module.class);
+                Intent intent = new Intent(MainActivity.this, ModuleDetailActivity1.class);
                 intent.putExtra("message1", "C346.");
                 intent.putExtra("message2", "Android Programming.");
                 intent.putExtra("message3", 2020);
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         btnModule2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, C349Module.class);
+                Intent intent = new Intent(MainActivity.this, ModuleDetailActivity2.class);
                 intent.putExtra("message1", "C349.");
                 intent.putExtra("message2", "IPad Programming.");
                 intent.putExtra("message3", 2020);

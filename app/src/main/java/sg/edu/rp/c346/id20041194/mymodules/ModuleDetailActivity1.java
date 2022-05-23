@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class C349Module extends AppCompatActivity {
+public class ModuleDetailActivity1 extends AppCompatActivity {
 
     TextView tvAnswer;
     TextView tvAnswer2;
@@ -18,7 +18,7 @@ public class C349Module extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_c349_module);
+        setContentView(R.layout.activity_c346_module);
 
         tvAnswer = findViewById(R.id.textView);
         tvAnswer2 = findViewById(R.id.textView2);
@@ -27,13 +27,15 @@ public class C349Module extends AppCompatActivity {
         tvAnswer5 = findViewById(R.id.textView5);
         tvAnswer6 = findViewById(R.id.textView6);
 
-        Intent h = getIntent();
-        tvAnswer.setText("Module Code: " + h.getStringExtra("message1"));
-        tvAnswer2.setText("Module Name: " + h.getStringExtra("message2"));
-        tvAnswer3.setText("Academic Year: " + h.getIntExtra("message3", 0));
-        tvAnswer4.setText("Semester: " + h.getIntExtra("message4",0));
-        tvAnswer5.setText("Module Credit: " + h.getIntExtra("message5",0));
-        tvAnswer6.setText("Venue: " + h.getStringExtra("message6"));
+
+        Intent j = getIntent();
+        tvAnswer.setText("Module Code: " + j.getStringExtra("message1"));
+        tvAnswer2.setText("Module Name: " + j.getStringExtra("message2"));
+        tvAnswer3.setText("Academic Year: " + j.getIntExtra("message3",0));
+        tvAnswer4.setText("Semester: " + j.getIntExtra("message4",0));
+        tvAnswer5.setText("Module Credit: " + j.getIntExtra("message5",0));
+        tvAnswer6.setText("Venue: " + j.getStringExtra("message6"));
+
 
     }
 }

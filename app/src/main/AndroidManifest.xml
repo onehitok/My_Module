@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyModules">
         <activity
-            android:name=".C349Module"
+            android:name=".ModuleDetailActivity2"
             android:exported="false" />
         <activity
-            android:name=".C346Module"
+            android:name=".ModuleDetailActivity1"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
