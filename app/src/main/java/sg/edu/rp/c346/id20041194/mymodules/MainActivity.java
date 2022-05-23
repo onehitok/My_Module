@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 intent.putExtra("message3", 2020);
                 intent.putExtra("message4", 1);
                 intent.putExtra("message5", 6);
-                intent.putExtra("message6", "E62E");
+                intent.putExtra("message6", "E62E.");
                 startActivity(intent);
             }
         });
